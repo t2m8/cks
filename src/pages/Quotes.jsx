@@ -3,10 +3,6 @@ import NavBar from '../components/Navbar.jsx';
 import { Reorder } from "framer-motion"
 import audioFile from '../assets/Tanpa_pesan_terakhir_x_jaga_selalu_hatimu_x_yang_telah_merelakanmu__speed_up___Reverb_(48k).mp3';
 
-const initialItems = [
-  "🍅 Tomato", "🥒 Cucumber", "🧀 Cheese", "🥬 Lettuce"
-  ]
-
 export default function Quotes() {
   const [darkMode, setDarkMode] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
@@ -41,11 +37,6 @@ export default function Quotes() {
        {isMusicPlaying ? 'Matikan Musik' : 'Hidupkan Musik'}
        </button>
         </div>
-        <Reorder.Group axis="y" onReorder={setItmes} values={items} >
-        {items.map(item) =>{
-          <Item key={item} item={item}/>
-        }}
-        <Reorder.Group/>
         <div className="bs rounded bg-gray-800 bs w-full p-5 mt-10">
           <p className="font-serif text-white">" Aku hanya ingin <br />
             Membuat mama bahagia. "</p>
