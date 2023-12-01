@@ -1,6 +1,6 @@
 export default function Footer (){
   return(
-    <footer className="w-full">
+    <footer className="max-w[85rem]">
       
       <div className="px-4 mx-auto">
         jhbfjkbdskgbasd

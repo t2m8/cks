@@ -3,14 +3,23 @@ import sttang from '../assets/sttang.jpeg'
 
 export default function Jumbotron (){
   return(
-    <section className="mt-16 md:mt-24 bg-cyan-500 w-full">
-      <div className="px-4 mx-auto flex flex-wrap md:flex md:justify-between md:items-center">
-        <div className="pt-6">
-        <h1>Selamat Datang Di website Cks</h1>
+    <div className='mt-14 md:mt-24 max-w-[1640px] mx-auto'>
+      <div className='max-h-[500px] relative'>
+        {/* Overlay */}
+        <div className='absolute w-full h-full text-gray-200 max-h-[500px] bg-black/40 flex flex-col justify-center text-center'>
+          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black'>
+            Welcome<span className='text-red-500'>To</span>
+          </h1>
+          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>
+            <span className='text-yellow-500'>CKS</span> E-SPORT
+          </h1>
         </div>
-        {/*w-1/2 h-2/5*/}
-        <img className="" src={sttang} alt="cks" />
+        <img
+          className='w-full max-h-[500px] object-cover'
+          src={sttang}
+          alt='/'
+        />
       </div>
-    </section>
+    </div>
     )
 }
