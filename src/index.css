@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+/*
+:root {
+  --clr-bg-dark: #1f2937;   
+  --clr-bg-light: #fafafa;   
+
+  --clr-text-dark: #1f2937;   
+  --clr-text-light: #fafafa; 
+}
+
+.dark {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-dark);
+}
+
+.light {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-light);
+}
+*/
+
+.dark {
+  @apply bg-gray-900 text-zinc-50
+}
+.light {
+  @apply bg-white text-black
+}
+
+.bsn{
+  @apply shadow-[rgba(0,0,0,0.15)_0px_15px_25px,rgba(0,0,0,0.05)_0px_5px_10px];
+}
+
+.bs{
+  @apply shadow-[rgb(38,57,77)_0px_20px_30px_-10px];
+}
+
