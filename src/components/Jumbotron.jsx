@@ -1,4 +1,4 @@
-import LogoCks from '../assets/cks.svg'
+import LgJ from '../assets/images__6_-removebg-preview.svg'
 
 export default function Jumbotron (){
   return(
@@ -8,7 +8,7 @@ export default function Jumbotron (){
         <h1>Selamat Datang Di website Cks</h1>
         </div>
         
-        <img className="" src={LogoCks} alt="cks" />
+        <img className="" src={LgJ} alt="cks" />
       </div>
     </section>
     )
