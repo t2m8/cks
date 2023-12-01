@@ -1,25 +1,38 @@
-import LgJ from '../assets/images__6_-removebg-preview.svg'
-import sttang from '../assets/sttang.jpeg'
+import React from "react";
+import HeroImg from "../assets/sttang.jpeg";
 
-export default function Jumbotron (){
-  return(
-    <div className='mt-14 md:mt-24 max-w-[1640px] mx-auto'>
-      <div className='max-h-[500px] relative'>
-        {/* Overlay */}
-        <div className='absolute w-full h-full text-gray-200 max-h-[500px] bg-black/40 flex flex-col justify-center text-center'>
-          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black'>
-            Welcome<span className='text-red-500'>To</span>
+import {
+  AiOutlineTwitter,
+  AiOutlineYoutube,
+  AiOutlineFacebook,
+} from "react-icons/ai";
+
+const Hero = () => {
+  return (
+    <section className="bg-cyan-500 mt-16 md:mt-24 px-5 text-white py-16 md:py-32">
+      <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
+        <div className="hero-info pb-5 md:pb-0">
+          <h1 className="text-gray-900 text-4xl lg:text-6xl font-serif">
+            WELCOME <span className="text-red-500">TO</span><br />
+            <span className=" text-yellow-500 text-4xl text-accent">
+            CKS</span>
+             E-SPORT
           </h1>
-          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>
-            <span className='text-yellow-500'>CKS</span> E-SPORT
-          </h1>
+
+          <p className="py-5">
+            website ini di buat untuk membuat anda senang walaupun nyata nya hatiku sedang tidak bahagia
+          </p>
+          </div>
+        <div className="hero-img">
+          <img
+            src={HeroImg}
+            alt="coding illustration"
+            className="lgw-[80%] rounded-t-full ml-auto"
+          />
         </div>
-        <img
-          className='w-full max-h-[500px] object-cover'
-          src={sttang}
-          alt='/'
-        />
       </div>
-    </div>
-    )
-}
+    </section>
+  );
+};
+
+export default Hero;
