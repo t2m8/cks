@@ -12,24 +12,24 @@ export default function NavBar(App) {
     const [navbar, setNavbar] = useState(false);
     
     return (
-       <nav className="text-white bg-gray-900 fixed bsn left-0 right-0 top-0 w-full shadow">
+       <nav className="z-30 text-white bg-gray-900 fixed bsn left-0 right-0 top-0 w-full shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
          <div className="flex items-center justify-between py-3 md:py-5 md:block ">
             <a href="javascript:void(0)">
           <img 
-          className="animate-bounce h-10 w-10 md:h-16 md:w-16"
+          className="animate-pulse h-10 w-10 md:h-16 md:w-16"
           src={logocks} 
           alt="cks"/> 
             </a>
             <div className="ml-52 cursor-pointer md:hidden" onClick={App.ToggleDarkMode}>
-             { App.darkMode ? <HiMiniSun className="text-yellow-500"/> : <IoMoonSharp/>}
+             { App.darkMode ? <HiMiniSun className="text-yellow-500 text-2xl"/> : <IoMoonSharp className="text-1xl"/>}
             </div>
              <div className="md:hidden">
              <button
              className="p-2"
              onClick={() => setNavbar(!navbar)}>
-           {navbar ? <IoClose/> : <FaBarsStaggered/>}
+           {navbar ? <IoClose className="text-2xl"/> : <FaBarsStaggered/>}
             </button>
                 </div>
             </div>
@@ -44,7 +44,7 @@ export default function NavBar(App) {
           <Link to="/Quotes">Tim Quotes</Link>
           </li>
           <div className="hidden cursor-pointer md:inline-block" onClick={App.ToggleDarkMode}>
-             { App.darkMode ? <HiMiniSun className="text-yellow-500"/> : <IoMoonSharp/>}
+             { App.darkMode ? <HiMiniSun className="text-yellow-500 text-3xl"/> : <IoMoonSharp className="text-3xl"/>}
                    </div>
                  </ul>
                </div>
