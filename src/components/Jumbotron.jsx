@@ -64,15 +64,22 @@ const [textColor, setTextColor] = React.useState('red');
             website ini di buat untuk membuat anda senang walaupun nyata nya hatiku sedang tidak bahagia
           </p>*/}
           <div className="flex z-0 shadow-none gap-5 animate-bounce mt-5 mb-3  cursor-pointer">
-
+          <a href="https://youtube.com/@cksoffice?si=vHpopp4b78iZZjEt">
             <FaYoutube className="text-3xl text-red-600"/>
-
+          </a>
+          
+          <a href="#">
             <FaInstagram className="text-3xl text-pink-600"/>
+          </a>
 
 
+          <a href="#">
             <FaTiktok className="text-3xl text-gray-800"/>
+          </a>
 
+          <a href="#">
             <FaFacebook className="text-3xl text-blue-800"/>
+          </a>
 
           </div>
           </div>
